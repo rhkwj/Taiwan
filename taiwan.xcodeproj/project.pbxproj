@@ -12,24 +12,24 @@
 		923E5B8020E70C2E007D9AA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923E5B7E20E70C2E007D9AA4 /* Main.storyboard */; };
 		923E5B8220E70C3C007D9AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923E5B8120E70C3C007D9AA4 /* Assets.xcassets */; };
 		923E5B8520E70C3C007D9AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923E5B8320E70C3C007D9AA4 /* LaunchScreen.storyboard */; };
-		923E5BB520E754D7007D9AA4 /* Screen Shot 2018-06-30 at 2.00.44 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 923E5BB420E754D6007D9AA4 /* Screen Shot 2018-06-30 at 2.00.44 PM.png */; };
-		923E5BB920E75533007D9AA4 /* cafe.png in Resources */ = {isa = PBXBuildFile; fileRef = 923E5BB820E75533007D9AA4 /* cafe.png */; };
-		923E5BBB20E7553E007D9AA4 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 923E5BBA20E7553E007D9AA4 /* facebook.png */; };
 		923E5BC320E761F8007D9AA4 /* back2.png in Resources */ = {isa = PBXBuildFile; fileRef = 923E5BC220E761F8007D9AA4 /* back2.png */; };
+		923E5BC520E76B36007D9AA4 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 923E5BC420E76B36007D9AA4 /* star.png */; };
+		923E5BD120E87CDD007D9AA4 /* cafe.png in Resources */ = {isa = PBXBuildFile; fileRef = 923E5BCD20E87CDC007D9AA4 /* cafe.png */; };
+		923E5BD220E87CDD007D9AA4 /* blog.png in Resources */ = {isa = PBXBuildFile; fileRef = 923E5BCE20E87CDC007D9AA4 /* blog.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		923E5B7720E70C2E007D9AA4 /* taiwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = taiwan.app; path = "/Users/kimyeonjeong/Desktop/IOS/udemy/엑스코드/taiwan/build/Debug-iphoneos/taiwan.app"; sourceTree = "<absolute>"; };
 		923E5B7A20E70C2E007D9AA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		923E5B7C20E70C2E007D9AA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		923E5B7F20E70C2E007D9AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		923E5B8120E70C3C007D9AA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		923E5B8420E70C3C007D9AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		923E5B8620E70C3C007D9AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		923E5BB420E754D6007D9AA4 /* Screen Shot 2018-06-30 at 2.00.44 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2018-06-30 at 2.00.44 PM.png"; sourceTree = "<group>"; };
-		923E5BB820E75533007D9AA4 /* cafe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cafe.png; sourceTree = "<group>"; };
-		923E5BBA20E7553E007D9AA4 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		923E5BC220E761F8007D9AA4 /* back2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back2.png; sourceTree = "<group>"; };
+		923E5BC420E76B36007D9AA4 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		923E5BCD20E87CDC007D9AA4 /* cafe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cafe.png; sourceTree = "<group>"; };
+		923E5BCE20E87CDC007D9AA4 /* blog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blog.png; sourceTree = "<group>"; };
+		92451F5720E88645005914BA /* taiwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = taiwan.app; path = "/Users/kimyeonjeong/Desktop/IOS/udemy/엑스코드/taiwan/build/Debug-iphoneos/taiwan.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,9 +48,9 @@
 			children = (
 				923E5B7920E70C2E007D9AA4 /* taiwan */,
 				923E5BC220E761F8007D9AA4 /* back2.png */,
-				923E5BBA20E7553E007D9AA4 /* facebook.png */,
-				923E5BB820E75533007D9AA4 /* cafe.png */,
-				923E5BB420E754D6007D9AA4 /* Screen Shot 2018-06-30 at 2.00.44 PM.png */,
+				923E5BC420E76B36007D9AA4 /* star.png */,
+				923E5BCE20E87CDC007D9AA4 /* blog.png */,
+				923E5BCD20E87CDC007D9AA4 /* cafe.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,7 +84,7 @@
 			);
 			name = taiwan;
 			productName = taiwan;
-			productReference = 923E5B7720E70C2E007D9AA4 /* taiwan.app */;
+			productReference = 92451F5720E88645005914BA /* taiwan.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,12 +126,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				923E5B8520E70C3C007D9AA4 /* LaunchScreen.storyboard in Resources */,
+				923E5BD120E87CDD007D9AA4 /* cafe.png in Resources */,
 				923E5B8220E70C3C007D9AA4 /* Assets.xcassets in Resources */,
-				923E5BB920E75533007D9AA4 /* cafe.png in Resources */,
-				923E5BBB20E7553E007D9AA4 /* facebook.png in Resources */,
 				923E5B8020E70C2E007D9AA4 /* Main.storyboard in Resources */,
-				923E5BB520E754D7007D9AA4 /* Screen Shot 2018-06-30 at 2.00.44 PM.png in Resources */,
+				923E5BC520E76B36007D9AA4 /* star.png in Resources */,
 				923E5BC320E761F8007D9AA4 /* back2.png in Resources */,
+				923E5BD220E87CDD007D9AA4 /* blog.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
