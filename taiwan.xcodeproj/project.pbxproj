@@ -12,10 +12,7 @@
 		923E5B8020E70C2E007D9AA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923E5B7E20E70C2E007D9AA4 /* Main.storyboard */; };
 		923E5B8220E70C3C007D9AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923E5B8120E70C3C007D9AA4 /* Assets.xcassets */; };
 		923E5B8520E70C3C007D9AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923E5B8320E70C3C007D9AA4 /* LaunchScreen.storyboard */; };
-		923E5BC320E761F8007D9AA4 /* back2.png in Resources */ = {isa = PBXBuildFile; fileRef = 923E5BC220E761F8007D9AA4 /* back2.png */; };
-		923E5BC520E76B36007D9AA4 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 923E5BC420E76B36007D9AA4 /* star.png */; };
-		923E5BD120E87CDD007D9AA4 /* cafe.png in Resources */ = {isa = PBXBuildFile; fileRef = 923E5BCD20E87CDC007D9AA4 /* cafe.png */; };
-		923E5BD220E87CDD007D9AA4 /* blog.png in Resources */ = {isa = PBXBuildFile; fileRef = 923E5BCE20E87CDC007D9AA4 /* blog.png */; };
+		9257841620EA232100C1F8EB /* PhotoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9257841520EA232100C1F8EB /* PhotoScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +22,8 @@
 		923E5B8120E70C3C007D9AA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		923E5B8420E70C3C007D9AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		923E5B8620E70C3C007D9AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		923E5BC220E761F8007D9AA4 /* back2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back2.png; sourceTree = "<group>"; };
-		923E5BC420E76B36007D9AA4 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
-		923E5BCD20E87CDC007D9AA4 /* cafe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cafe.png; sourceTree = "<group>"; };
-		923E5BCE20E87CDC007D9AA4 /* blog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blog.png; sourceTree = "<group>"; };
-		92451F5720E88645005914BA /* taiwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = taiwan.app; path = "/Users/kimyeonjeong/Desktop/IOS/udemy/엑스코드/taiwan/build/Debug-iphoneos/taiwan.app"; sourceTree = "<absolute>"; };
+		9257841320EA22A600C1F8EB /* taiwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taiwan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9257841520EA232100C1F8EB /* PhotoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +41,7 @@
 			isa = PBXGroup;
 			children = (
 				923E5B7920E70C2E007D9AA4 /* taiwan */,
-				923E5BC220E761F8007D9AA4 /* back2.png */,
-				923E5BC420E76B36007D9AA4 /* star.png */,
-				923E5BCE20E87CDC007D9AA4 /* blog.png */,
-				923E5BCD20E87CDC007D9AA4 /* cafe.png */,
+				9257841320EA22A600C1F8EB /* taiwan.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +49,22 @@
 			isa = PBXGroup;
 			children = (
 				923E5B7A20E70C2E007D9AA4 /* AppDelegate.swift */,
-				923E5B7C20E70C2E007D9AA4 /* ViewController.swift */,
+				9257841420EA22F300C1F8EB /* View Controllers */,
 				923E5B7E20E70C2E007D9AA4 /* Main.storyboard */,
 				923E5B8120E70C3C007D9AA4 /* Assets.xcassets */,
 				923E5B8320E70C3C007D9AA4 /* LaunchScreen.storyboard */,
 				923E5B8620E70C3C007D9AA4 /* Info.plist */,
 			);
 			path = taiwan;
+			sourceTree = "<group>";
+		};
+		9257841420EA22F300C1F8EB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				923E5B7C20E70C2E007D9AA4 /* ViewController.swift */,
+				9257841520EA232100C1F8EB /* PhotoScreenViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,7 +84,7 @@
 			);
 			name = taiwan;
 			productName = taiwan;
-			productReference = 92451F5720E88645005914BA /* taiwan.app */;
+			productReference = 9257841320EA22A600C1F8EB /* taiwan.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,12 +126,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				923E5B8520E70C3C007D9AA4 /* LaunchScreen.storyboard in Resources */,
-				923E5BD120E87CDD007D9AA4 /* cafe.png in Resources */,
 				923E5B8220E70C3C007D9AA4 /* Assets.xcassets in Resources */,
 				923E5B8020E70C2E007D9AA4 /* Main.storyboard in Resources */,
-				923E5BC520E76B36007D9AA4 /* star.png in Resources */,
-				923E5BC320E761F8007D9AA4 /* back2.png in Resources */,
-				923E5BD220E87CDD007D9AA4 /* blog.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +140,7 @@
 			files = (
 				923E5B7D20E70C2E007D9AA4 /* ViewController.swift in Sources */,
 				923E5B7B20E70C2E007D9AA4 /* AppDelegate.swift in Sources */,
+				9257841620EA232100C1F8EB /* PhotoScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
