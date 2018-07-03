@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Caption</key>
+		<string>지하철 노선도</string>
+		<key>Comment</key>
+		<string>지하철 노선도</string>
+		<key>Photo</key>
+		<string>01</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>지역별 지도</string>
+		<key>Comment</key>
+		<string>지역별 지도</string>
+		<key>Photo</key>
+		<string>02</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>여긴 어디 나는 누구</string>
+		<key>Comment</key>
+		<string>위치기반 서비스</string>
+		<key>Photo</key>
+		<string>03</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>지하철 역 기반 서비스</string>
+		<key>Comment</key>
+		<string>스탬프, 맛집 등등</string>
+		<key>Photo</key>
+		<string>04</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>준비물 체크</string>
+		<key>Comment</key>
+		<string>준비물 체크</string>
+		<key>Photo</key>
+		<string>05</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>먹킷리스트 체크</string>
+		<key>Comment</key>
+		<string>먹킷리스트 체크</string>
+		<key>Photo</key>
+		<string>07</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>실시간 단톡방</string>
+		<key>Comment</key>
+		<string>궁금한거 바로바로</string>
+		<key>Photo</key>
+		<string>08</string>
+	</dict>
+	<dict>
+		<key>Caption</key>
+		<string>쿠폰</string>
+		<key>Comment</key>
+		<string>할인</string>
+		<key>Photo</key>
+		<string>09</string>
+	</dict>
+</array>
+</plist>

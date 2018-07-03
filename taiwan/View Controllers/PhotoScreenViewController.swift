@@ -14,7 +14,7 @@ class PhotoScreenViewController: UIViewController {
     
     @IBOutlet private weak var collectionView: UICollectionView!
     
-    var collectionData = ["1🐶", "2🐹","3🐭","4🐰","5🦊","6🐻","7🐼","8🐨","9🐯","10🐷"]
+    var collectionData = ["1","2","3","4","5","6","7","8"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +53,13 @@ extension PhotoScreenViewController: UICollectionViewDelegate, UICollectionViewD
     
     func collectionView(_ _collectionView: UICollectionView, cellForItemAt indexpath: IndexPath) -> UICollectionViewCell{
         let cell = _collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexpath)
+        
+        cell.layoutIfNeeded()
+        
+        cell.layer.cornerRadius      = 15
+        
+        cell.layer.masksToBounds     = true
+        
         if let label = cell.viewWithTag(100) as? UILabel {
             label.text = collectionData[indexpath.row]
         }

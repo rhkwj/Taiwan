@@ -13,6 +13,7 @@
 		923E5B8220E70C3C007D9AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923E5B8120E70C3C007D9AA4 /* Assets.xcassets */; };
 		923E5B8520E70C3C007D9AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923E5B8320E70C3C007D9AA4 /* LaunchScreen.storyboard */; };
 		9257841620EA232100C1F8EB /* PhotoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9257841520EA232100C1F8EB /* PhotoScreenViewController.swift */; };
+		928F6F5420EBBC8100FF55E2 /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 928F6F5320EBBC8100FF55E2 /* Photos.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		923E5B8620E70C3C007D9AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9257841320EA22A600C1F8EB /* taiwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taiwan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9257841520EA232100C1F8EB /* PhotoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoScreenViewController.swift; sourceTree = "<group>"; };
+		928F6F5320EBBC8100FF55E2 /* Photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Photos.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				923E5B7C20E70C2E007D9AA4 /* ViewController.swift */,
 				9257841520EA232100C1F8EB /* PhotoScreenViewController.swift */,
+				928F6F5320EBBC8100FF55E2 /* Photos.plist */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 				923E5B8520E70C3C007D9AA4 /* LaunchScreen.storyboard in Resources */,
 				923E5B8220E70C3C007D9AA4 /* Assets.xcassets in Resources */,
 				923E5B8020E70C2E007D9AA4 /* Main.storyboard in Resources */,
+				928F6F5420EBBC8100FF55E2 /* Photos.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
