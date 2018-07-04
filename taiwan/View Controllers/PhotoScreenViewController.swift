@@ -14,7 +14,7 @@ class PhotoScreenViewController: UIViewController {
     
     @IBOutlet private weak var collectionView: UICollectionView!
     
-    var collectionData = ["1","2","3","4","5","6","7","8"]
+    var collectionData = ["1","2","3","4","5","6"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
