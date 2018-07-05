@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341A0F5AE5E246FED4C2B285 /* Pods_taiwan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0400C0F670A6A482B17A9DD5 /* Pods_taiwan.framework */; };
 		923E5B7B20E70C2E007D9AA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923E5B7A20E70C2E007D9AA4 /* AppDelegate.swift */; };
 		923E5B7D20E70C2E007D9AA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923E5B7C20E70C2E007D9AA4 /* ViewController.swift */; };
 		923E5B8020E70C2E007D9AA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923E5B7E20E70C2E007D9AA4 /* Main.storyboard */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0400C0F670A6A482B17A9DD5 /* Pods_taiwan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taiwan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71E46CA831514DEF9692441A /* Pods-taiwan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taiwan.release.xcconfig"; path = "Pods/Target Support Files/Pods-taiwan/Pods-taiwan.release.xcconfig"; sourceTree = "<group>"; };
+		837479F3E71BD16069AABBF3 /* Pods-taiwan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taiwan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-taiwan/Pods-taiwan.debug.xcconfig"; sourceTree = "<group>"; };
 		923E5B7A20E70C2E007D9AA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		923E5B7C20E70C2E007D9AA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		923E5B7F20E70C2E007D9AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341A0F5AE5E246FED4C2B285 /* Pods_taiwan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8611F810A25A029870B50999 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				837479F3E71BD16069AABBF3 /* Pods-taiwan.debug.xcconfig */,
+				71E46CA831514DEF9692441A /* Pods-taiwan.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		923E5B6E20E70C2E007D9AA4 = {
 			isa = PBXGroup;
 			children = (
 				923E5B7920E70C2E007D9AA4 /* taiwan */,
 				9257841320EA22A600C1F8EB /* taiwan.app */,
+				8611F810A25A029870B50999 /* Pods */,
+				B92F066E6A6E74E8DD5E4C3B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +86,14 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		B92F066E6A6E74E8DD5E4C3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0400C0F670A6A482B17A9DD5 /* Pods_taiwan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 923E5B8920E70C3C007D9AA4 /* Build configuration list for PBXNativeTarget "taiwan" */;
 			buildPhases = (
+				F28EF15EE103F5E74016E95D /* [CP] Check Pods Manifest.lock */,
 				923E5B7320E70C2E007D9AA4 /* Sources */,
 				923E5B7420E70C2E007D9AA4 /* Frameworks */,
 				923E5B7520E70C2E007D9AA4 /* Resources */,
+				619D0AE761159FB9B5CF387B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +162,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		619D0AE761159FB9B5CF387B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-taiwan/Pods-taiwan-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FAPanels/FAPanels.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FAPanels.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-taiwan/Pods-taiwan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F28EF15EE103F5E74016E95D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-taiwan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		923E5B7320E70C2E007D9AA4 /* Sources */ = {
@@ -286,15 +351,13 @@
 		};
 		923E5B8A20E70C3C007D9AA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 837479F3E71BD16069AABBF3 /* Pods-taiwan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Z2W5ZDA6N;
 				INFOPLIST_FILE = taiwan/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meibanfa.taiwan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -304,15 +367,13 @@
 		};
 		923E5B8B20E70C3C007D9AA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71E46CA831514DEF9692441A /* Pods-taiwan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Z2W5ZDA6N;
 				INFOPLIST_FILE = taiwan/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meibanfa.taiwan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
