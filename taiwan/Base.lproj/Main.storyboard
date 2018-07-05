@@ -88,46 +88,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MCx-7l-qBz">
-                                <rect key="frame" x="0.0" y="46" width="78" height="210"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="MCx-7l-qBz">
+                                <rect key="frame" x="9" y="45" width="200" height="422"/>
                                 <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KT7-HA-xVI">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="60.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="쿠폰">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.21960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6t-zb-pog">
-                                        <rect key="frame" x="0.0" y="0.0" width="78" height="30"/>
-                                        <state key="normal" title="쿠폰"/>
+                                        <rect key="frame" x="0.0" y="60.5" width="200" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="실시간 단체카톡">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMk-7F-An2">
-                                        <rect key="frame" x="0.0" y="30" width="78" height="30"/>
-                                        <state key="normal" title="차량서비스"/>
+                                        <rect key="frame" x="0.0" y="120.5" width="200" height="60.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="차량서비스">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWM-vU-8MX">
-                                        <rect key="frame" x="0.0" y="60" width="78" height="30"/>
-                                        <state key="normal" title="와이파이"/>
+                                        <rect key="frame" x="0.0" y="181" width="200" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="와이파이 대여">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ7-td-DxD">
-                                        <rect key="frame" x="0.0" y="90" width="78" height="30"/>
-                                        <state key="normal" title="멜로디하우스"/>
+                                        <rect key="frame" x="0.0" y="241" width="200" height="60.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="멜로디하우스">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKE-U7-SCO">
-                                        <rect key="frame" x="0.0" y="120" width="78" height="30"/>
-                                        <state key="normal" title="공동구매"/>
+                                        <rect key="frame" x="0.0" y="301.5" width="200" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="공동구매">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6x-jR-p9K">
-                                        <rect key="frame" x="0.0" y="150" width="78" height="30"/>
-                                        <state key="normal" title="오픈카톡"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVm-dy-pxe">
-                                        <rect key="frame" x="0.0" y="180" width="78" height="30"/>
-                                        <state key="normal" title="찾아보기"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Leq-OO-SWq">
+                                        <rect key="frame" x="0.0" y="361.5" width="200" height="60.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="찾아보기">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="inB-HV-Lwi"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ZUo-OZ-5ne" firstAttribute="bottom" secondItem="MCx-7l-qBz" secondAttribute="bottom" constant="411" id="Ui1-2V-sJl"/>
-                            <constraint firstItem="MCx-7l-qBz" firstAttribute="leading" secondItem="ZUo-OZ-5ne" secondAttribute="leading" id="bqt-Ug-axE"/>
-                            <constraint firstItem="ZUo-OZ-5ne" firstAttribute="trailing" secondItem="MCx-7l-qBz" secondAttribute="trailing" constant="297" id="z1n-rC-lu5"/>
-                            <constraint firstItem="MCx-7l-qBz" firstAttribute="top" secondItem="ZUo-OZ-5ne" secondAttribute="top" constant="26" id="z9r-Hd-k5T"/>
+                            <constraint firstItem="MCx-7l-qBz" firstAttribute="top" secondItem="ZUo-OZ-5ne" secondAttribute="top" constant="25" id="3Hl-z0-cTK"/>
+                            <constraint firstItem="MCx-7l-qBz" firstAttribute="leading" secondItem="ZUo-OZ-5ne" secondAttribute="leading" constant="9" id="RxA-HF-caK"/>
+                            <constraint firstItem="ZUo-OZ-5ne" firstAttribute="bottom" secondItem="MCx-7l-qBz" secondAttribute="bottom" constant="200" id="sna-Cv-6IU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZUo-OZ-5ne"/>
                     </view>
