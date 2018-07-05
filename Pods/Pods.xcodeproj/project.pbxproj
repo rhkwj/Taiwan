@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -47,15 +47,15 @@
 		39AFCD81F5CC9F3D74EDFB74D9D44A81 /* Pods-taiwan-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-taiwan-resources.sh"; sourceTree = "<group>"; };
 		3A17714A487BE400538D880A87163E2F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E26F1A5016EFF22869298290E819F65 /* Pods-taiwan-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-taiwan-dummy.m"; sourceTree = "<group>"; };
-		3E9BEFECBC3721D62B2D62548C160DC0 /* Pods_taiwan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_taiwan.framework; path = "Pods-taiwan.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E9BEFECBC3721D62B2D62548C160DC0 /* Pods_taiwan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taiwan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E278C1E71E8616D3B8B528DB8D9FCCA /* FAPanels.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FAPanels.xcconfig; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		72EDFA3055B63F80FBBE9B29E2EDC325 /* FAPanelConfigurations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FAPanelConfigurations.swift; path = FAPanels/Classes/FAPanelConfigurations.swift; sourceTree = "<group>"; };
 		76C1029507690EC5E362D6D1003DEDF1 /* Pods-taiwan-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-taiwan-acknowledgements.plist"; sourceTree = "<group>"; };
 		7FF9FEB606ADFCA55AE8D467E74896C2 /* FAPanels-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FAPanels-dummy.m"; sourceTree = "<group>"; };
 		8312EEBAF0DD1CB385B4F0520C60A2DA /* Pods-taiwan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-taiwan-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9B3C9785A99095A863E91BE2A1CCC593 /* FAPanels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FAPanels.framework; path = FAPanels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B3C9785A99095A863E91BE2A1CCC593 /* FAPanels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FAPanels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C567CA07528391504AC59272F41E80 /* Pods-taiwan-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-taiwan-frameworks.sh"; sourceTree = "<group>"; };
 		B5C0477D27AD17DF7F268BB01D97938F /* Pods-taiwan-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-taiwan-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BE0D25FACA3B91A282E4A6D2AACF567F /* FAPanels.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FAPanels.modulemap; sourceTree = "<group>"; };
@@ -157,7 +157,6 @@
 				07DAAA2BDCC3FA3DB7B9E58336879453 /* UIViewController+FAPanel.swift */,
 				B80C0DA7C5E4CB38442083B63FFB8C1A /* Support Files */,
 			);
-			name = FAPanels;
 			path = FAPanels;
 			sourceTree = "<group>";
 		};

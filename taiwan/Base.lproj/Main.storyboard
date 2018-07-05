@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J42-PC-3bt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VE2-T8-NzZ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,32 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Photo Screen View Controller-->
+        <!--PhotoScreenViewController-->
         <scene sceneID="p3R-Xe-INe">
             <objects>
-                <viewController id="J42-PC-3bt" customClass="PhotoScreenViewController" customModule="taiwan" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PhotoScreenViewControllerId" id="J42-PC-3bt" userLabel="PhotoScreenViewController" customClass="PhotoScreenViewController" customModule="taiwan" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gXW-Z9-2AT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OP7-8W-qXZ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="backgroundColor" red="1" green="0.0078431372549019607" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="barTintColor" red="1" green="0.0078431372549019607" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="19"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="대만여행연구소" id="X4c-P2-TzI">
-                                        <barButtonItem key="leftBarButtonItem" image="menu" style="plain" id="KhS-rY-adi">
-                                            <color key="tintColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HTQ-9b-TFd">
-                                <rect key="frame" x="10" y="64" width="355" height="539"/>
+                                <rect key="frame" x="10" y="74" width="355" height="529"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bnG-H9-nUt">
                                     <size key="itemSize" width="174" height="174"/>
@@ -72,17 +56,21 @@
                         <color key="backgroundColor" red="1" green="0.0" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="iRi-2V-aM3" firstAttribute="bottom" secondItem="HTQ-9b-TFd" secondAttribute="bottom" constant="20" id="Hxz-L8-2RH"/>
-                            <constraint firstItem="OP7-8W-qXZ" firstAttribute="top" secondItem="iRi-2V-aM3" secondAttribute="top" id="JhI-fx-GxD"/>
-                            <constraint firstItem="OP7-8W-qXZ" firstAttribute="trailing" secondItem="iRi-2V-aM3" secondAttribute="trailing" id="L7i-Pc-7Qc"/>
-                            <constraint firstItem="HTQ-9b-TFd" firstAttribute="top" secondItem="OP7-8W-qXZ" secondAttribute="bottom" id="QG0-oU-y83"/>
-                            <constraint firstItem="OP7-8W-qXZ" firstAttribute="leading" secondItem="iRi-2V-aM3" secondAttribute="leading" id="X6w-0I-T8n"/>
+                            <constraint firstItem="HTQ-9b-TFd" firstAttribute="top" secondItem="iRi-2V-aM3" secondAttribute="top" constant="10" id="fH6-mx-ug1"/>
                             <constraint firstItem="HTQ-9b-TFd" firstAttribute="leading" secondItem="iRi-2V-aM3" secondAttribute="leading" constant="10" id="kHp-mM-Gtc"/>
                             <constraint firstItem="iRi-2V-aM3" firstAttribute="trailing" secondItem="HTQ-9b-TFd" secondAttribute="trailing" constant="10" id="mtz-G1-deh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iRi-2V-aM3"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="tWl-fb-I7o"/>
+                    <navigationItem key="navigationItem" title="대만여행연구소" id="X4c-P2-TzI">
+                        <barButtonItem key="leftBarButtonItem" image="menu" style="plain" id="KhS-rY-adi">
+                            <color key="tintColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="barButtonItemDidPressed:" destination="J42-PC-3bt" id="Mqd-hf-izb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="collectionView" destination="HTQ-9b-TFd" id="pKD-0x-6kH"/>
@@ -90,7 +78,96 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQe-Px-xHx" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="781.5" y="133.5"/>
+            <point key="canvasLocation" x="1392.8" y="94.902548725637189"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9If-I2-akO">
+            <objects>
+                <viewController storyboardIdentifier="LeftMenuVC" id="EMk-Wr-g0c" customClass="ViewController" customModule="taiwan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xKM-a0-ekV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MCx-7l-qBz">
+                                <rect key="frame" x="0.0" y="46" width="78" height="210"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6t-zb-pog">
+                                        <rect key="frame" x="0.0" y="0.0" width="78" height="30"/>
+                                        <state key="normal" title="쿠폰"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMk-7F-An2">
+                                        <rect key="frame" x="0.0" y="30" width="78" height="30"/>
+                                        <state key="normal" title="차량서비스"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWM-vU-8MX">
+                                        <rect key="frame" x="0.0" y="60" width="78" height="30"/>
+                                        <state key="normal" title="와이파이"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ7-td-DxD">
+                                        <rect key="frame" x="0.0" y="90" width="78" height="30"/>
+                                        <state key="normal" title="멜로디하우스"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKE-U7-SCO">
+                                        <rect key="frame" x="0.0" y="120" width="78" height="30"/>
+                                        <state key="normal" title="공동구매"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6x-jR-p9K">
+                                        <rect key="frame" x="0.0" y="150" width="78" height="30"/>
+                                        <state key="normal" title="오픈카톡"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVm-dy-pxe">
+                                        <rect key="frame" x="0.0" y="180" width="78" height="30"/>
+                                        <state key="normal" title="찾아보기"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZUo-OZ-5ne" firstAttribute="bottom" secondItem="MCx-7l-qBz" secondAttribute="bottom" constant="411" id="Ui1-2V-sJl"/>
+                            <constraint firstItem="MCx-7l-qBz" firstAttribute="leading" secondItem="ZUo-OZ-5ne" secondAttribute="leading" id="bqt-Ug-axE"/>
+                            <constraint firstItem="ZUo-OZ-5ne" firstAttribute="trailing" secondItem="MCx-7l-qBz" secondAttribute="trailing" constant="297" id="z1n-rC-lu5"/>
+                            <constraint firstItem="MCx-7l-qBz" firstAttribute="top" secondItem="ZUo-OZ-5ne" secondAttribute="top" constant="26" id="z9r-Hd-k5T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZUo-OZ-5ne"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xrj-jS-jYH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1392.8" y="880.20989505247383"/>
+        </scene>
+        <!--Panel Controller-->
+        <scene sceneID="Wvg-Sc-UCv">
+            <objects>
+                <viewController id="VE2-T8-NzZ" customClass="FAPanelController" customModule="FAPanels" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bZm-Kh-aaX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2at-ZZ-yYj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Da-bs-AMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-311" y="107"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tNG-4J-3Hc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wGD-8N-C75" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pbF-Uj-cqF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="J42-PC-3bt" kind="relationship" relationship="rootViewController" id="xa3-3c-uSc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBx-OK-PEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="453.60000000000002" y="94.902548725637189"/>
         </scene>
     </scenes>
     <resources>

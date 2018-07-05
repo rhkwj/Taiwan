@@ -7,15 +7,28 @@
 //
 
 import UIKit
+import FAPanels
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        let leftMenuVC: ViewController = mainStoryboard.instantiateViewController(withIdentifier: "LeftMenuVC") as! ViewController
+        
+        let centerVC: PhotoScreenViewController = mainStoryboard.instantiateViewController(withIdentifier: "PhotoScreenViewControllerId") as! PhotoScreenViewController
+        let centerNavVC = UINavigationController(rootViewController: centerVC)
+        
+        
+        
+        
+        let rootController: FAPanelController = window?.rootViewController as! FAPanelController
+        rootController.center(centerNavVC).left(leftMenuVC)
+        
         return true
     }
 
