@@ -19,6 +19,8 @@ class PhotoScreenViewController: UIViewController {
         
           panel?.openLeft(animated: true)
     }
+    
+    
     var collectionData = ["1","2","3","4","5","6","7","8"]
 
     override func viewDidLoad() {
@@ -26,7 +28,7 @@ class PhotoScreenViewController: UIViewController {
         //        let width = (view.frame.size.width) / 2
         
         
-        
+
         collectionView.dataSource = self
         collectionView.delegate = self
         // Do any additional setup after loading the view, typically from a nib.

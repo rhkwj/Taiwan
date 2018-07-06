@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let leftMenuVC: ViewController = mainStoryboard.instantiateViewController(withIdentifier: "LeftMenuVC") as! ViewController
+        let leftMenuVC: MenuViewController = mainStoryboard.instantiateViewController(withIdentifier: "LeftMenuVC") as! MenuViewController
         
         let centerVC: PhotoScreenViewController = mainStoryboard.instantiateViewController(withIdentifier: "PhotoScreenViewControllerId") as! PhotoScreenViewController
         let centerNavVC = UINavigationController(rootViewController: centerVC)
@@ -28,6 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let rootController: FAPanelController = window?.rootViewController as! FAPanelController
         rootController.center(centerNavVC).left(leftMenuVC)
+        
+        
+        
         
         return true
     }
