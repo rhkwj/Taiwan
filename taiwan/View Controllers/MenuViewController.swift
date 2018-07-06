@@ -25,6 +25,11 @@ class MenuViewController: UIViewController {
         panel?.center(centerNavVC2)
     }
     
+    @IBAction func button3DidPressed(_ sender: Any) {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let centerNavVC3: UINavigationController = mainStoryboard.instantiateViewController(withIdentifier: "centerNavVC3") as! UINavigationController
+        panel?.center(centerNavVC3)
+    }
     
     
     
