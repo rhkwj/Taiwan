@@ -57,10 +57,19 @@ class MenuViewController: UIViewController {
         panel?.center(centerNavVC7)
     }
     
+    
+    @IBAction func button8DidPressed(_ sender: Any) {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let centerNavVC8: UINavigationController = mainStoryboard.instantiateViewController(withIdentifier: "centerNavVC8") as! UINavigationController
+        panel?.center(centerNavVC8)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

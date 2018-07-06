@@ -20,6 +20,7 @@
 		9245081520EF5F7E006FD179 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245081420EF5F7E006FD179 /* HouseViewController.swift */; };
 		9245081720EF6101006FD179 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245081620EF6101006FD179 /* ShopViewController.swift */; };
 		9257841620EA232100C1F8EB /* PhotoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9257841520EA232100C1F8EB /* PhotoScreenViewController.swift */; };
+		9257C9A120EF685E001238E9 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9257C9A020EF685E001238E9 /* FindViewController.swift */; };
 		928F6F5420EBBC8100FF55E2 /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 928F6F5320EBBC8100FF55E2 /* Photos.plist */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		9245081620EF6101006FD179 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		9257841320EA22A600C1F8EB /* taiwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taiwan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9257841520EA232100C1F8EB /* PhotoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoScreenViewController.swift; sourceTree = "<group>"; };
+		9257C9A020EF685E001238E9 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		928F6F5320EBBC8100FF55E2 /* Photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Photos.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +101,7 @@
 				9245081220EF5E2A006FD179 /* WifiViewController.swift */,
 				9245081420EF5F7E006FD179 /* HouseViewController.swift */,
 				9245081620EF6101006FD179 /* ShopViewController.swift */,
+				9257C9A020EF685E001238E9 /* FindViewController.swift */,
 				928F6F5320EBBC8100FF55E2 /* Photos.plist */,
 			);
 			path = "View Controllers";
@@ -230,6 +233,7 @@
 				9245081720EF6101006FD179 /* ShopViewController.swift in Sources */,
 				923E5B7D20E70C2E007D9AA4 /* MenuViewController.swift in Sources */,
 				9245081320EF5E2A006FD179 /* WifiViewController.swift in Sources */,
+				9257C9A120EF685E001238E9 /* FindViewController.swift in Sources */,
 				923E5B7B20E70C2E007D9AA4 /* AppDelegate.swift in Sources */,
 				9245080F20EF32CF006FD179 /* KakaoViewController.swift in Sources */,
 				9257841620EA232100C1F8EB /* PhotoScreenViewController.swift in Sources */,
