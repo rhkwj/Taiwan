@@ -33,7 +33,29 @@ class MenuViewController: UIViewController {
     
     
     
+    @IBAction func button4DidPressed(_ sender: Any) {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let centerNavVC4: UINavigationController = mainStoryboard.instantiateViewController(withIdentifier: "centerNavVC4") as! UINavigationController
+        panel?.center(centerNavVC4)
+    }
     
+    @IBAction func button5DidPressed(_ sender: Any) {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let centerNavVC5: UINavigationController = mainStoryboard.instantiateViewController(withIdentifier: "centerNavVC5") as! UINavigationController
+        panel?.center(centerNavVC5)
+    }
+    
+    @IBAction func button6DidPressed(_ sender: Any) {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let centerNavVC6: UINavigationController = mainStoryboard.instantiateViewController(withIdentifier: "centerNavVC6") as! UINavigationController
+        panel?.center(centerNavVC6)
+    }
+    
+    @IBAction func button7DidPressed(_ sender: Any) {
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let centerNavVC7: UINavigationController = mainStoryboard.instantiateViewController(withIdentifier: "centerNavVC7") as! UINavigationController
+        panel?.center(centerNavVC7)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
