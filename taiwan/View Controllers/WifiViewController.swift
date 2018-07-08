@@ -8,8 +8,11 @@
 
 import UIKit
 import FAPanels
+import WebKit
 
-class WifiViewController: UIViewController {
+class WifiViewController: UIViewController, WKNavigationDelegate {
+    
+    var webView: WKWebView!
 
     @IBAction func menuButtonDidPressed(_ sender: Any) {
         
@@ -18,15 +21,33 @@ class WifiViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let url = URL(string: "https://www.unitetraveler.com.tw/deals?id=113")!
+        webView.load(URLRequest(url: url))
+        
+        // 2
+        let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
+        toolbarItems = [refresh]
+        navigationController?.isToolbarHidden = false
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    override func loadView() {
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        view = webView
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        title = webView.title
+    }
+
 
     /*
     // MARK: - Navigation

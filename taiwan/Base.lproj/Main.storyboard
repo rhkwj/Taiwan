@@ -359,7 +359,7 @@
                         <viewLayoutGuide key="safeArea" id="ddx-IR-Zt5"/>
                     </view>
                     <navigationItem key="navigationItem" id="Psy-27-gYo">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="IoH-Sb-8SM">
+                        <barButtonItem key="leftBarButtonItem" title="menu" id="IoH-Sb-8SM">
                             <color key="tintColor" red="1" green="0.0" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="menuButtonDidPressed:" destination="FXz-6t-sqe" id="3KB-j8-niz"/>
@@ -455,7 +455,7 @@
                         <viewLayoutGuide key="safeArea" id="qhM-xc-xQa"/>
                     </view>
                     <navigationItem key="navigationItem" id="egw-6y-oG6">
-                        <barButtonItem key="leftBarButtonItem" title="nemu" id="7BS-ae-RTd">
+                        <barButtonItem key="leftBarButtonItem" title="menu" id="7BS-ae-RTd">
                             <color key="tintColor" red="1" green="0.0" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="menuButtonDidPressed:" destination="v72-12-bBa" id="QuJ-oB-51M"/>
@@ -490,20 +490,11 @@
                     <view key="view" contentMode="scaleToFill" id="Scj-CO-p8o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="실시간 단체카톡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFk-4u-QQE">
-                                <rect key="frame" x="175" y="323" width="108" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="D9f-L9-0GX"/>
                     </view>
                     <navigationItem key="navigationItem" id="inW-O8-vlW">
-                        <barButtonItem key="leftBarButtonItem" title="nemu" id="aua-II-ybh">
+                        <barButtonItem key="leftBarButtonItem" title="menu" id="aua-II-ybh">
                             <color key="tintColor" red="1" green="0.0" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="menuButtonDidPressed:" destination="Urs-d6-GHS" id="Irz-Ad-3yV"/>

@@ -8,9 +8,11 @@
 
 import UIKit
 import FAPanels
+import WebKit
 
-class CarViewController: UIViewController {
+class CarViewController: UIViewController, WKNavigationDelegate{
 
+    var webView: WKWebView!
     
     @IBAction func menuButtonDidPressed(_ sender: Any) {
         

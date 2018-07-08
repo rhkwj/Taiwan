@@ -8,19 +8,32 @@
 
 import UIKit
 import FAPanels
+import WebKit
 
-class KakaoViewController: UIViewController {
 
-    
+class KakaoViewController: UIViewController, WKNavigationDelegate {
+
+    var webView: WKWebView!
+
+
     @IBAction func menuButtonDidPressed(_ sender: Any) {
     
          panel?.openLeft(animated: true)
         
+        
     }
-    
-    
+
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let url = URL(string: "https://open.kakao.com/o/gsJs9yB")!
+        webView.load(URLRequest(url: url))
+        
+        // 2
+        let refresh = UIBarButtonItem(barButtonSystemItem: .refresh, target: webView, action: #selector(webView.reload))
+        toolbarItems = [refresh]
+        navigationController?.isToolbarHidden = false
 
         // Do any additional setup after loading the view.
     }
@@ -30,6 +43,15 @@ class KakaoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func loadView() {
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        view = webView
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        title = webView.title
+    }
 
     /*
     // MARK: - Navigation
