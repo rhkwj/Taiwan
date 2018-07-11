@@ -22,7 +22,7 @@ class WifiViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let url = URL(string: "https://www.unitetraveler.com.tw/deals?id=113")!
+        let url = URL(string: "https://www.unitetraveler.com.tw/deals?id=113&lang=ko")!
         webView.load(URLRequest(url: url))
         
         // 2
