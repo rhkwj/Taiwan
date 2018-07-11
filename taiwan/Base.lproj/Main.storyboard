@@ -64,7 +64,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="대만여행연구소" id="X4c-P2-TzI">
-                        <barButtonItem key="leftBarButtonItem" image="menu" style="plain" id="KhS-rY-adi">
+                        <barButtonItem key="leftBarButtonItem" image="menu1" style="plain" id="KhS-rY-adi">
                             <color key="tintColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="barButtonItemDidPressed:" destination="J42-PC-3bt" id="Mqd-hf-izb"/>
@@ -490,6 +490,19 @@
                     <view key="view" contentMode="scaleToFill" id="Scj-CO-p8o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Kakao" translatesAutoresizingMaskIntoConstraints="NO" id="Imf-QK-mnx">
+                                <rect key="frame" x="16" y="240" width="343" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="카카오톡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99C-9h-Qmx">
+                                <rect key="frame" x="158" y="626" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="D9f-L9-0GX"/>
                     </view>
@@ -531,12 +544,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="차량대여" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHf-RT-bY5">
-                                <rect key="frame" x="158" y="317" width="59" height="21"/>
+                                <rect key="frame" x="158" y="626" width="59" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="QWV-UL-OdG">
+                                <rect key="frame" x="16" y="225" width="343" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Sgw-ai-AeA"/>
@@ -552,11 +569,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I5m-43-0M2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1438" y="2554"/>
+            <point key="canvasLocation" x="1437.5999999999999" y="2553.3733133433284"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Kakao" width="527" height="318"/>
+        <image name="car" width="694" height="356"/>
         <image name="coupon" width="350" height="546"/>
-        <image name="menu" width="80" height="80"/>
+        <image name="menu1" width="32" height="32"/>
     </resources>
 </document>
