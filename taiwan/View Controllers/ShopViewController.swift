@@ -8,6 +8,7 @@
 
 import UIKit
 import FAPanels
+import WebKit
 
 class ShopViewController: UIViewController {
 
@@ -15,12 +16,15 @@ class ShopViewController: UIViewController {
         panel?.openLeft(animated: true)
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if let url = URL(string: "https://smartstore.naver.com/taiwanmart/products/3249730537") {
+            UIApplication.shared.open(url, options: [:])
+        }
+        
     }
+
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
