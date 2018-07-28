@@ -58,10 +58,10 @@ extension PhotoScreenViewController: UICollectionViewDelegate, UICollectionViewD
         return collectionData.count
     }
     
-    func collectionView(_ _collectionView: UICollectionView, cellForItemAt indexpath: IndexPath) -> UICollectionViewCell{
-        let cell = _collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexpath)
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexpath: IndexPath) -> UICollectionViewCell{
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexpath) as! PhotoCollectionViewCell
         
-        cell.layoutIfNeeded()
+        cell.photo = photos[indexpath.row]
         
         cell.layer.cornerRadius      = 15
         
