@@ -12,6 +12,8 @@ import FAPanels
 
 class PhotoScreenViewController: UIViewController {
     
+     var photos = Photo.allPhotos()
+    
     
     @IBOutlet private weak var collectionView: UICollectionView!
     

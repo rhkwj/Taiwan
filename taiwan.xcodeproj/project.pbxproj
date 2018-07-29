@@ -13,6 +13,7 @@
 		923E5B8020E70C2E007D9AA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923E5B7E20E70C2E007D9AA4 /* Main.storyboard */; };
 		923E5B8220E70C3C007D9AA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923E5B8120E70C3C007D9AA4 /* Assets.xcassets */; };
 		923E5B8520E70C3C007D9AA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 923E5B8320E70C3C007D9AA4 /* LaunchScreen.storyboard */; };
+		92440A96210C26200082ADDD /* Photos.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92440A95210C26200082ADDD /* Photos.xcassets */; };
 		9245080D20EF3130006FD179 /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245080C20EF3130006FD179 /* CouponViewController.swift */; };
 		9245080F20EF32CF006FD179 /* KakaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245080E20EF32CF006FD179 /* KakaoViewController.swift */; };
 		9245081120EF5BB4006FD179 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9245081020EF5BB4006FD179 /* CarViewController.swift */; };
@@ -22,6 +23,8 @@
 		9257841620EA232100C1F8EB /* PhotoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9257841520EA232100C1F8EB /* PhotoScreenViewController.swift */; };
 		9257C9A120EF685E001238E9 /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9257C9A020EF685E001238E9 /* FindViewController.swift */; };
 		928F6F5420EBBC8100FF55E2 /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 928F6F5320EBBC8100FF55E2 /* Photos.plist */; };
+		92C8603D210C299E000776CB /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C8603C210C299E000776CB /* Photos.swift */; };
+		92C8603F210C29B3000776CB /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C8603E210C29B3000776CB /* PhotoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,7 @@
 		923E5B8120E70C3C007D9AA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		923E5B8420E70C3C007D9AA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		923E5B8620E70C3C007D9AA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92440A95210C26200082ADDD /* Photos.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Photos.xcassets; sourceTree = "<group>"; };
 		9245080C20EF3130006FD179 /* CouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
 		9245080E20EF32CF006FD179 /* KakaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoViewController.swift; sourceTree = "<group>"; };
 		9245081020EF5BB4006FD179 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +48,8 @@
 		9257841520EA232100C1F8EB /* PhotoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoScreenViewController.swift; sourceTree = "<group>"; };
 		9257C9A020EF685E001238E9 /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		928F6F5320EBBC8100FF55E2 /* Photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Photos.plist; sourceTree = "<group>"; };
+		92C8603C210C299E000776CB /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		92C8603E210C29B3000776CB /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +87,12 @@
 			isa = PBXGroup;
 			children = (
 				923E5B7A20E70C2E007D9AA4 /* AppDelegate.swift */,
+				92C8603C210C299E000776CB /* Photos.swift */,
+				92C8603E210C29B3000776CB /* PhotoCollectionViewCell.swift */,
 				9257841420EA22F300C1F8EB /* View Controllers */,
 				923E5B7E20E70C2E007D9AA4 /* Main.storyboard */,
-				923E5B8120E70C3C007D9AA4 /* Assets.xcassets */,
 				923E5B8320E70C3C007D9AA4 /* LaunchScreen.storyboard */,
-				923E5B8620E70C3C007D9AA4 /* Info.plist */,
+				92C8603B210C284D000776CB /* support files */,
 			);
 			path = taiwan;
 			sourceTree = "<group>";
@@ -102,9 +109,19 @@
 				9245081420EF5F7E006FD179 /* HouseViewController.swift */,
 				9245081620EF6101006FD179 /* ShopViewController.swift */,
 				9257C9A020EF685E001238E9 /* FindViewController.swift */,
-				928F6F5320EBBC8100FF55E2 /* Photos.plist */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		92C8603B210C284D000776CB /* support files */ = {
+			isa = PBXGroup;
+			children = (
+				92440A95210C26200082ADDD /* Photos.xcassets */,
+				923E5B8120E70C3C007D9AA4 /* Assets.xcassets */,
+				923E5B8620E70C3C007D9AA4 /* Info.plist */,
+				928F6F5320EBBC8100FF55E2 /* Photos.plist */,
+			);
+			path = "support files";
 			sourceTree = "<group>";
 		};
 		B92F066E6A6E74E8DD5E4C3B /* Frameworks */ = {
@@ -178,6 +195,7 @@
 				923E5B8520E70C3C007D9AA4 /* LaunchScreen.storyboard in Resources */,
 				923E5B8220E70C3C007D9AA4 /* Assets.xcassets in Resources */,
 				923E5B8020E70C2E007D9AA4 /* Main.storyboard in Resources */,
+				92440A96210C26200082ADDD /* Photos.xcassets in Resources */,
 				928F6F5420EBBC8100FF55E2 /* Photos.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +251,8 @@
 				9245081720EF6101006FD179 /* ShopViewController.swift in Sources */,
 				923E5B7D20E70C2E007D9AA4 /* MenuViewController.swift in Sources */,
 				9245081320EF5E2A006FD179 /* WifiViewController.swift in Sources */,
+				92C8603F210C29B3000776CB /* PhotoCollectionViewCell.swift in Sources */,
+				92C8603D210C299E000776CB /* Photos.swift in Sources */,
 				9257C9A120EF685E001238E9 /* FindViewController.swift in Sources */,
 				923E5B7B20E70C2E007D9AA4 /* AppDelegate.swift in Sources */,
 				9245080F20EF32CF006FD179 /* KakaoViewController.swift in Sources */,
@@ -384,7 +404,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Z2W5ZDA6N;
-				INFOPLIST_FILE = taiwan/Info.plist;
+				INFOPLIST_FILE = "taiwan/support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -403,7 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8Z2W5ZDA6N;
-				INFOPLIST_FILE = taiwan/Info.plist;
+				INFOPLIST_FILE = "taiwan/support files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
