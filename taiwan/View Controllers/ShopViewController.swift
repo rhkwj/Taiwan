@@ -18,7 +18,7 @@ class ShopViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let url = URL(string: "https://smartstore.naver.com/taiwanmart/products/3249730537") {
+        if let url = URL(string: "https://smartstore.naver.com/taiwanmart/bundle/5860403") {
             UIApplication.shared.open(url, options: [:])
         }
         
